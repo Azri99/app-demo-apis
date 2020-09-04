@@ -3,7 +3,7 @@ const cors = require('cors');
 
 const webServer = require('./services/web-server');
 
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 app.use(cors({origin:true}));
 
