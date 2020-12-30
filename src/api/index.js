@@ -5,6 +5,7 @@ const emojis = require('./emojis');
 const router = express.Router();
 
 router.get('/', (req, res) => {
+  console.log('Manage To Log');
   res.json({
     message: 'API - 👋🌎🌍🌏'
   });
